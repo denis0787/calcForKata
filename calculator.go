@@ -58,7 +58,7 @@ func calculate(expression string) (string, error) {
 	if len(left) > 10 {
 		return "", fmt.Errorf("Левая строка превышает 10 символов")
 	}
-	if len(right) > 10 && operator == "+" {
+	if len(right) > 10 {
 		return "", fmt.Errorf("Правая строка превышает 10 символов")
 	}
 
